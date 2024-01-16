@@ -17,6 +17,7 @@ export type OfficialOptions = DappwrightBrowserLaunchArgumentOptions & {
   wallet: WalletIdOptions;
   version: 'latest' | string;
   headless?: boolean;
+  extensions?: string[];
 };
 
 export type DappwrightLaunchResponse = {
