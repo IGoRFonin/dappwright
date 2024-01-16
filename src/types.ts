@@ -1,4 +1,4 @@
-import { BrowserContext, Page } from 'playwright-core';
+import { BrowserContext, BrowserType, Page } from 'playwright-core';
 import Wallet from './wallets/wallet';
 import { WalletIdOptions } from './wallets/wallets';
 export { CoinbaseWallet } from './wallets/coinbase/coinbase';
@@ -18,6 +18,7 @@ export type OfficialOptions = DappwrightBrowserLaunchArgumentOptions & {
   version: 'latest' | string;
   headless?: boolean;
   extensions?: string[];
+  chromium?: BrowserType;
 };
 
 export type DappwrightLaunchResponse = {

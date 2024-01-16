@@ -31,7 +31,7 @@ export async function launch(browserName: string, options: OfficialOptions): Pro
 
   fs.rmSync(userDataDir, { recursive: true, force: true });
 
-  const browserContext = await playwright.chromium.launchPersistentContext(userDataDir, {
+  const browserContext = await (officialOptions.chromium || playwright.chromium).launchPersistentContext(userDataDir, {
     headless: false,
     args: browserArgs,
   });
