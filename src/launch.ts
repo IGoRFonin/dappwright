@@ -34,6 +34,7 @@ export async function launch(browserName: string, options: OfficialOptions): Pro
   const browserContext = await (officialOptions.chromium || playwright.chromium).launchPersistentContext(userDataDir, {
     headless: false,
     args: browserArgs,
+    ...(officialOptions.chromiumContext || {}),
   });
 
   return {

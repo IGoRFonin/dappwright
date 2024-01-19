@@ -19,6 +19,7 @@ export type OfficialOptions = DappwrightBrowserLaunchArgumentOptions & {
   headless?: boolean;
   extensions?: string[];
   chromium?: BrowserType;
+  chromiumContext?: BrowserType['launchPersistentContext'];
 };
 
 export type DappwrightLaunchResponse = {
