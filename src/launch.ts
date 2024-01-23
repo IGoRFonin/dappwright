@@ -31,11 +31,14 @@ export async function launch(browserName: string, options: OfficialOptions): Pro
 
   fs.rmSync(userDataDir, { recursive: true, force: true });
 
-  const browserContext = await (officialOptions.chromium || playwright.chromium).launchPersistentContext(userDataDir, {
-    headless: false,
-    args: browserArgs,
-    ...(officialOptions.chromiumContext || {}),
-  });
+  const browserContext = await (officialOptions.chromium || playwright.chromium).launchPersistentContext(
+    officialOptions.userDataDir || userDataDir,
+    {
+      headless: false,
+      args: browserArgs,
+      ...(officialOptions.chromiumContext || {}),
+    },
+  );
 
   return {
     wallet: await getWallet(wallet.id, browserContext),

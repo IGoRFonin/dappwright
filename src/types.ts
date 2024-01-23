@@ -20,6 +20,7 @@ export type OfficialOptions = DappwrightBrowserLaunchArgumentOptions & {
   extensions?: string[];
   chromium?: BrowserType;
   chromiumContext?: Parameters<BrowserType['launchPersistentContext']>[1];
+  userDataDir?: string;
 };
 
 export type DappwrightLaunchResponse = {
