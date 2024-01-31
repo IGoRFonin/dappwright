@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.7.8
+
+### Patch Changes
+
+- [`896ca656de562213ecdaec48b758fcc6d402657a`](https://github.com/TenKeyLabs/dappwright/commit/896ca656de562213ecdaec48b758fcc6d402657a) Thanks [@IGoRFonin](https://github.com/IGoRFonin)! - feat: 🎸 add new parament for another extensions
+
+- [#291](https://github.com/TenKeyLabs/dappwright/pull/291) [`0db6269d674497944703303029e2f4fb44afff72`](https://github.com/TenKeyLabs/dappwright/commit/0db6269d674497944703303029e2f4fb44afff72) Thanks [@IGoRFonin](https://github.com/IGoRFonin)! - fix: 🐛 metamask add network got it popup
+
 ## 2.7.1
 
 ### Patch Changes
