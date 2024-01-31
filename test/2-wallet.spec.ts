@@ -94,7 +94,7 @@ test.describe('when interacting with the wallet', () => {
         if (wallet instanceof MetaMaskWallet) {
           await wallet.switchNetwork('Goerli');
 
-          const selectedNetwork = await wallet.page.locator('.mm-picker-network > p').textContent();
+          const selectedNetwork = await wallet.page.getByTestId('network-display').getByText('Goerli').textContent();
           expect(selectedNetwork).toEqual('Goerli');
         } else {
           console.warn('Coinbase skips network switching');
