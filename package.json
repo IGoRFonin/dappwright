@@ -1,6 +1,6 @@
 {
   "name": "playwright-dapp",
-  "version": "2.7.6",
+  "version": "2.7.7",
   "description": "End-to-End (E2E) testing for dApps using Playwright + MetaMask",
   "source": "src/index.ts",
   "main": "dist/index.js",
